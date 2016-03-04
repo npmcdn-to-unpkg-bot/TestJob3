@@ -23,3 +23,12 @@
 <my-hero-detail [hero]="selectedHero"></my-hero-detail>
 
 <div *ngIf="selectedHero">{{selectedHero | json}}</div>
+
+<hr>
+
+<label>Имя:</label>
+<!-- data-bind to the input element; store value in yourName -->
+<input type="text" [(ngModel)]="yourName" placeholder="Enter a name here">
+
+<!-- conditionally display `yourName` -->
+<h1 [hidden]="!yourName">Привет {{yourName}}!</h1>

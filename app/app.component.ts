@@ -11,6 +11,7 @@ export class AppComponent {
     title = 'Tour of Heroes';
     heroes = HEROES;
     myHero = this.heroes[0];
+    yourName: string = '';
 
     selectedHero: Hero;
     onSelect(hero: Hero) { this.selectedHero = hero; }
