@@ -1,0 +1,11 @@
+<hr>
+<div *ngIf="hero">
+    <h2>Подробнее о {{hero.name}}!!!</h2>
+    <div><label>id: </label>{{hero.id}}</div>
+    <div>
+        <label>Имя: </label>
+        <input [(ngModel)]="hero.name" placeholder="name"/>
+
+        <power-select [power]="hero.power"></power-select>
+    </div>
+</div>
